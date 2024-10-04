@@ -21,12 +21,29 @@
 }
 .webcontent{
     height: 100%;
-    width: 100%;
-    padding: 2%;
+    padding: 5%;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding-top: 25px;
+}
+.image{
+    width: 300px;
+    border-radius: 10%;
 }
 .contenthead{
     font-family: 'Franklin Gothic Medium';
+}
+.choicebutton{
+    background-color: burlywood;
+    font-family: cursive;
+    height: 50px;
+    width: 150px;
+    border-radius: 15cap;
+    transition: cubic-bezier(0.19, 1, 0.22, 1);
+    transition-duration: 300ms;
 }
 .footer{
     background-color: aqua;
