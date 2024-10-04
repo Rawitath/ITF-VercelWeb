@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    height: 4rem;
+    background-color: gold;
+    align-items: center;
+    column-gap: 16px;
+    padding-left: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: sticky;
+}
+.navitem{
+    background-color: transparent;
+    border: 0px;
+    font-family: Impact;
+    font-size: 24px;
+}
+.webcontent{
+    height: 100%;
+    width: 100%;
+    padding: 2%;
+    text-align: center;
+}
+.contenthead{
+    font-family: 'Franklin Gothic Medium';
+}
+.footer{
+    background-color: aqua;
+    height: auto;
+    width: 100%;
+    padding: 7px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+.footitem{
+    font-family: Impact;
+    font-style: italic;
+}
