@@ -192,6 +192,7 @@
     font-family: 'Franklin Gothic Medium';
     font-size: 30px;
     transition-duration: 300ms;
+    font-weight: bold;
 }
 .usernamehead:hover{
     font-size: 32px;
@@ -199,4 +200,5 @@
     color: blue;
     cursor: pointer;
     text-decoration: underline;
+    font-weight: bold;
 }
