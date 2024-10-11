@@ -1,6 +1,10 @@
 *{
     margin: 0;
 }
+.breakline{
+    color: grey;
+    width: 100%;
+}
 .navbar{
     display: flex;
     flex-direction: row;
@@ -18,6 +22,13 @@
     border: 0px;
     font-family: Impact;
     font-size: 20px;
+    transition-duration: 200ms;
+}
+.navitem:hover{
+    background-color: transparent;
+    border: 0px;
+    font-family: Impact;
+    font-size: 24px;
 }
 .webcontent{
     height: 100%;
@@ -46,6 +57,15 @@
     transition: cubic-bezier(0.19, 1, 0.22, 1);
     transition-duration: 300ms;
 }
+.choicebutton:hover{
+    background-color: beige;
+    font-family: cursive;
+    height: 60px;
+    width: 170px;
+    border-radius: 15cap;
+    transition: cubic-bezier(0.19, 1, 0.22, 1);
+    transition-duration: 300ms;
+}
 .footer{
     background-color: aqua;
     height: auto;
@@ -59,6 +79,13 @@
 .footitem{
     font-family: Impact;
     font-style: italic;
+    font-size: medium;
+    transition-duration: 200ms;
+}
+.footitem:hover{
+    font-family: Impact;
+    font-style: italic;
+    font-size: large;
 }
 .phonebookcontent{
     height: 100%;
@@ -135,6 +162,17 @@
     transition: cubic-bezier(0.19, 1, 0.22, 1);
     transition-duration: 300ms;
 }
+.inputbutton:hover{
+    height: 140%;
+    min-width: 90px;
+    border-width: 2px;
+    width: auto;
+    background-color: burlywood;
+    font-family: 'Franklin Gothic Medium';
+    border-radius: 10px;
+    transition: cubic-bezier(0.19, 1, 0.22, 1);
+    transition-duration: 300ms;
+}
 .phonegrid{
     background-color: aliceblue;
     display: grid;
@@ -149,4 +187,16 @@
     font-size: 18px;
     text-align: left;
     font-family: 'Franklin Gothic Medium';
+}
+.usernamehead{
+    font-family: 'Franklin Gothic Medium';
+    font-size: 30px;
+    transition-duration: 300ms;
+}
+.usernamehead:hover{
+    font-size: 32px;
+    font-family: 'Franklin Gothic Medium';
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
 }

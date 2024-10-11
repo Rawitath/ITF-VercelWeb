@@ -18,7 +18,7 @@
             </div>
         </div>
         <h1 class="contenthead">Hi,</h1>
-        <h1 class="contenthead" id="username">รวิทัศน์ วิธานธำรง 67070149</h1>
+        <h1 class="usernamehead" onclick="location.href='https://github.com/Rawitath'" id="username">รวิทัศน์ วิธานธำรง 67070149</h1>
         <div class="entryset">
             <p class="inputtopic">Set username</p>
             <input class="inputfieldbig" id="usernameinput" placeholder="Enter your username">
@@ -29,14 +29,15 @@
             <input class="inputfieldbig" id="urlinput" placeholder="Enter your image URL">
             <button class="inputbutton" onclick="ChangePFP()">SET</button>
         </div>
+        <hr class="breakline">
         <h1 class="contenthead">Phone Number List</h1>
         <div class="entryset">
-            <input class="inputfield" placeholder="Name">
-            <input class="inputfield" placeholder="Tel">
-            <button class="inputbutton">ADD</button>
+            <input class="inputfield" id="nameinput" placeholder="Name">
+            <input class="inputfield" id="telinput" placeholder="Tel">
+            <button class="inputbutton" onclick="CreateTelList()">ADD</button>
             <button class="inputbutton">EXPORT</button>
         </div>
-        <div class="phonegrid">
+        <div class="phonegrid" id="phonegrid">
             <div class="phoneitem"><p>No.</p></div>
             <div class="phoneitem"><p>Name</p></div>
             <div class="phoneitem"><p>Number</p></div>
@@ -44,12 +45,17 @@
     </div>
     <script>
         const username = document.getElementById("username");
-        const pfp = document.getElementsByClassName("pfp");
+        const pfp = document.getElementsByClassName("pfp")[0];
+        const phonegrid = document.getElementById("phonegrid")
+        const phoneitem = document.getElementById("phoneitem")
         function ChangeUsername(){
             username.textContent = document.getElementById("usernameinput").value;
         }
         function ChangePFP(){
-            pfp.style.backgroundImage = "url(document.getElementById('urlinput').value)"";
+            pfp.style.backgroundImage = `url('${document.getElementById('urlinput').value}')`;
+        }
+        function CreateTelList(){
+            //WIP
         }
     </script>
     </body>
