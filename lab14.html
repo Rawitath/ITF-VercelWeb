@@ -18,22 +18,39 @@
             </div>
         </div>
         <h1 class="contenthead">Hi,</h1>
-        <h1 class="contenthead">รวิทัศน์ วิธานธำรง 67070149</h1>
+        <h1 class="contenthead" id="username">รวิทัศน์ วิธานธำรง 67070149</h1>
         <div class="entryset">
             <p class="inputtopic">Set username</p>
-            <input class="inputfield">
-            <button class="inputbutton">SET</button>
+            <input class="inputfieldbig" id="usernameinput" placeholder="Enter your username">
+            <button class="inputbutton" onclick="ChangeUsername()">SET</button>
         </div>
         <div class="entryset">
-            <p class="inputtopic">Set username</p>
-            <input class="inputfield">
-            <button class="inputbutton">SET</button>
+            <p class="inputtopic">Set Profile Image's URL</p>
+            <input class="inputfieldbig" id="urlinput" placeholder="Enter your image URL">
+            <button class="inputbutton" onclick="ChangePFP()">SET</button>
         </div>
         <h1 class="contenthead">Phone Number List</h1>
         <div class="entryset">
-            <input class="inputfield">
-            <input class="inputfield">
+            <input class="inputfield" placeholder="Name">
+            <input class="inputfield" placeholder="Tel">
+            <button class="inputbutton">ADD</button>
+            <button class="inputbutton">EXPORT</button>
+        </div>
+        <div class="phonegrid">
+            <div class="phoneitem"><p>No.</p></div>
+            <div class="phoneitem"><p>Name</p></div>
+            <div class="phoneitem"><p>Number</p></div>
         </div>
     </div>
+    <script>
+        const username = document.getElementById("username");
+        const pfp = document.getElementsByClassName("pfp");
+        function ChangeUsername(){
+            username.textContent = document.getElementById("usernameinput").value;
+        }
+        function ChangePFP(){
+            pfp.style.backgroundImage = "url(document.getElementById('urlinput').value)"";
+        }
+    </script>
     </body>
 </html>
