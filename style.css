@@ -15,6 +15,7 @@
     padding-left: 25px;
     padding-top: 10px;
     padding-bottom: 10px;
+    top: 0;
     position: sticky;
 }
 .navitem{
@@ -48,6 +49,17 @@
 .contenthead{
     font-family: 'Franklin Gothic Medium';
 }
+.contentheadanim{
+    font-family: 'Franklin Gothic Medium';
+    animation: color-change 7s infinite;
+}
+@keyframes color-change {
+    0% { color: red; }
+    25% {color: green;}
+    50% { color: blue; }
+    75% {color: green;}
+    100% { color: red; }
+  }
 .choicebutton{
     background-color: burlywood;
     font-family: cursive;
@@ -63,6 +75,7 @@
     height: 60px;
     width: 170px;
     border-radius: 15cap;
+    cursor: pointer;
     transition: cubic-bezier(0.19, 1, 0.22, 1);
     transition-duration: 300ms;
 }
@@ -142,9 +155,28 @@
     height: 100%;
     width: 365px;
     font-family: 'Franklin Gothic Medium';
+    transition-duration: 200ms;
+}
+.inputfieldbig:hover{
+    background-color: white;
+    border-color: lightgray;
+    border-width: 2px;
+    border-radius: 10px;
+    height: 100%;
+    width: 365px;
+    font-family: 'Franklin Gothic Medium';
 }
 .inputfield{
     background-color: azure;
+    border-color: lightgray;
+    border-width: 2px;
+    border-radius: 10px;
+    height: 100%;
+    font-family: 'Franklin Gothic Medium';
+    transition-duration: 200ms;
+}
+.inputfield:hover{
+    background-color: white;
     border-color: lightgray;
     border-width: 2px;
     border-radius: 10px;
@@ -167,16 +199,24 @@
     min-width: 90px;
     border-width: 2px;
     width: auto;
-    background-color: burlywood;
+    background-color: beige;
     font-family: 'Franklin Gothic Medium';
     border-radius: 10px;
-    transition: cubic-bezier(0.19, 1, 0.22, 1);
-    transition-duration: 300ms;
 }
 .phonegrid{
     background-color: aliceblue;
     display: grid;
-    grid-template-columns: 300px 300px 300px;
+    grid-template-columns: 15vw 35vw 35vw;
+}
+.phoneitemchild{
+    background-color: transparent;
+    color: black;
+    border: 10px;
+    border-color: black;
+    padding: 10px;
+    font-size: 16px;
+    text-align: left;
+    font-family: 'Franklin Gothic Medium';
 }
 .phoneitem{
     background-color: gray;
@@ -201,4 +241,9 @@
     cursor: pointer;
     text-decoration: underline;
     font-weight: bold;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
 }
